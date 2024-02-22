@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/QSBodyPain/static/css/main.d0847dce.css",
+    "main.css": "/QSBodyPain/static/css/main.1818c7d5.css",
     "main.js": "/QSBodyPain/static/js/main.38b0b675.js",
     "index.html": "/QSBodyPain/index.html",
-    "main.d0847dce.css.map": "/QSBodyPain/static/css/main.d0847dce.css.map",
+    "main.1818c7d5.css.map": "/QSBodyPain/static/css/main.1818c7d5.css.map",
     "main.38b0b675.js.map": "/QSBodyPain/static/js/main.38b0b675.js.map"
   },
   "entrypoints": [
-    "static/css/main.d0847dce.css",
+    "static/css/main.1818c7d5.css",
     "static/js/main.38b0b675.js"
   ]
 }
