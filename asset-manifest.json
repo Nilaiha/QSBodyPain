@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/qsbodypain/static/css/main.d0847dce.css",
+    "main.js": "/qsbodypain/static/js/main.38b0b675.js",
+    "index.html": "/qsbodypain/index.html",
+    "main.d0847dce.css.map": "/qsbodypain/static/css/main.d0847dce.css.map",
+    "main.38b0b675.js.map": "/qsbodypain/static/js/main.38b0b675.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d0847dce.css",
+    "static/js/main.38b0b675.js"
+  ]
+}
