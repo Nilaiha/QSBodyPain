@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/qsbodypain/static/css/main.d0847dce.css",
-    "main.js": "/qsbodypain/static/js/main.38b0b675.js",
-    "index.html": "/qsbodypain/index.html",
-    "main.d0847dce.css.map": "/qsbodypain/static/css/main.d0847dce.css.map",
-    "main.38b0b675.js.map": "/qsbodypain/static/js/main.38b0b675.js.map"
+    "main.css": "/QSBodyPain/static/css/main.d0847dce.css",
+    "main.js": "/QSBodyPain/static/js/main.38b0b675.js",
+    "index.html": "/QSBodyPain/index.html",
+    "main.d0847dce.css.map": "/QSBodyPain/static/css/main.d0847dce.css.map",
+    "main.38b0b675.js.map": "/QSBodyPain/static/js/main.38b0b675.js.map"
   },
   "entrypoints": [
     "static/css/main.d0847dce.css",
