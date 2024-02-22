@@ -35,6 +35,8 @@ function App() {
         const x = event.clientX - rect.left; // x position within the element.
         const y = event.clientY - rect.top; // y position within the element.
 
+        console.log({ svg, event, rect });
+
         // Calculate the SVG coordinates
         const xRatio = svg.viewBox.baseVal.width / rect.width;
         const yRatio = svg.viewBox.baseVal.height / rect.height;
