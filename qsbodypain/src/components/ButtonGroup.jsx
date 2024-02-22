@@ -1,7 +1,9 @@
 function ButtonGroup({ resetShownAreas }) {
     return (
         <div className="button-group">
-            <button onClick={resetShownAreas}>Reset</button>
+            <button className="button" onClick={resetShownAreas}>
+                Reset
+            </button>
         </div>
     );
 }

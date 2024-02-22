@@ -1,3 +1,9 @@
+:root {
+    --zeg-color-main: rgb(25, 131, 124);
+    --zeg-color-sup: rgb(210, 237, 235);
+    --plain-white: white;
+}
+
 .app {
     display: flex;
     flex-direction: column;
@@ -7,41 +13,62 @@
 
 .header {
     font-family: "Arial", sans-serif;
-    font-size: 1.5em; /* 32px */
+    font-size: 1.5em;
     text-align: center;
-    color: #333; /* Dark grey */
+    color: var(--plain-white);
     padding: 10px 0;
-    background-color: #719c8a; /* Light grey background */
-    width: 60vw;
+    background-color: black;
+    width: 50rem;
 }
 
 .main-area {
-    background-color: bisque;
-    width: 60vw;
+    background-color: var(--zeg-color-sup);
+    width: 49rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-left: 0.5rem solid black;
+    border-right: 0.5rem solid black;
+}
+
+.path-selected {
+    fill: #e65954;
+}
+
+.transparent {
+    fill: transparent;
 }
 
 .prompt {
     font-family: "Arial", sans-serif;
-    font-size: 1.2em; /* 19.2px */
-    color: #666; /* Medium grey */
-    margin-bottom: 20px;
+    font-size: 1.3em;
+    color: var(--zeg-color-main);
+    margin-bottom: 5px;
     text-align: center;
     padding: 0 20px;
 }
 
 .button-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50rem;
+    height: 5rem;
+    background-color: black;
+}
+
+.button {
     font-family: "Arial", sans-serif;
-    background-color: #007bff; /* Bootstrap primary blue */
-    color: white;
+    background-color: var(--zeg-color-main);
+    color: var(--plain-white);
     padding: 10px 20px;
-    font-size: 1em; /* 16px */
+    font-size: 1.3em; /* 16px */
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-weight: bold;
 }
 
 .button:hover {

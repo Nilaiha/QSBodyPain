@@ -3,16 +3,72 @@ import bodyMalePathData from "./BodyMalePathData";
 export function BodyMale({ handleAreaClick, shownAreas }) {
     return (
         <svg width="700" height="700" viewBox="0 0 245.75999 245.75999">
+            <defs>
+                <filter
+                    id="red-glow"
+                    x="-100%"
+                    y="-100%"
+                    width="300%"
+                    height="300%">
+                    <feGaussianBlur
+                        in="SourceGraphic"
+                        stdDeviation="3"
+                        result="blur"
+                    />
+                    <feFlood flood-color="#db403b" result="flood" />
+                    <feComposite
+                        in="flood"
+                        in2="blur"
+                        operator="in"
+                        result="composite"
+                    />
+                    {/* 
+                    <feBlend in="SourceGraphic" in2="composite" /> */}
+                </filter>
+                <filter
+                    id="point-glow"
+                    x="-75%"
+                    y="-75%"
+                    width="300%"
+                    height="300%">
+                    <feGaussianBlur
+                        in="SourceGraphic"
+                        stdDeviation="2"
+                        result="blur"
+                    />
+                    <feFlood flood-color="black" result="flood" />
+                    <feComposite
+                        in="flood"
+                        in2="blur"
+                        operator="in"
+                        result="composite"
+                    />
+                    <feBlend in="SourceGraphic" in2="composite" />
+                </filter>
+            </defs>
             <g id="back">
                 {Object.entries(bodyMalePathData.back).map(([id, data]) => (
                     <path
                         key={id}
                         id={id}
-                        style={{ fill: shownAreas[id] ? "red" : "transparent" }}
+                        className={
+                            shownAreas[id] ? "path-selected" : "transparent"
+                        }
                         d={data}
                         onClick={handleAreaClick}
+                        filter={shownAreas[id] ? "url(#red-glow)" : ""}
                     />
                 ))}
+                {/* {clickPoints.map((point, index) => (
+                    <circle
+                        key={index}
+                        cx={point.x}
+                        cy={point.y}
+                        r="2.5"
+                        fill="purple"
+                        filter="url(#point-glow)"
+                    />
+                ))} */}
                 <path
                     id="back-detailed"
                     style={{ fill: "#000000" }}
@@ -24,9 +80,12 @@ export function BodyMale({ handleAreaClick, shownAreas }) {
                     <path
                         key={id}
                         id={id}
-                        style={{ fill: shownAreas[id] ? "red" : "transparent" }}
+                        className={
+                            shownAreas[id] ? "path-selected" : "transparent"
+                        }
                         d={data}
                         onClick={handleAreaClick}
+                        filter={shownAreas[id] ? "url(#red-glow)" : ""}
                     />
                 ))}
                 <path
