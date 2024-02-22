@@ -1,19 +1,12 @@
-import { useState } from "react";
 import bodyMalePathData from "./BodyMalePathData";
 
-export function BodyMale() {
-    const [shownAreas, setShownAreas] = useState({});
-
-    const handleAreaClick = (event) => {
-        console.log("SVG path clicked!", event, event.target.id, shownAreas);
-        setShownAreas({ ...shownAreas, [event.target.id]: true });
-    };
-
+export function BodyMale({ handleAreaClick, shownAreas }) {
     return (
         <svg width="700" height="700" viewBox="0 0 245.75999 245.75999">
             <g id="back">
                 {Object.entries(bodyMalePathData.back).map(([id, data]) => (
                     <path
+                        key={id}
                         id={id}
                         style={{ fill: shownAreas[id] ? "red" : "transparent" }}
                         d={data}
@@ -29,6 +22,7 @@ export function BodyMale() {
             <g id="front">
                 {Object.entries(bodyMalePathData.front).map(([id, data]) => (
                     <path
+                        key={id}
                         id={id}
                         style={{ fill: shownAreas[id] ? "red" : "transparent" }}
                         d={data}
