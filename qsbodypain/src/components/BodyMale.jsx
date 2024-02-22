@@ -19,7 +19,7 @@ export function BodyMale({ handleAreaClick, shownAreas, svgRef, clickPoints }) {
                         stdDeviation="3"
                         result="blur"
                     />
-                    <feFlood flood-color="#db403b" result="flood" />
+                    <feFlood floodColor="#db403b" result="flood" />
                     <feComposite
                         in="flood"
                         in2="blur"
@@ -40,7 +40,7 @@ export function BodyMale({ handleAreaClick, shownAreas, svgRef, clickPoints }) {
                         stdDeviation="2"
                         result="blur"
                     />
-                    <feFlood flood-color="black" result="flood" />
+                    <feFlood floodColor="black" result="flood" />
                     <feComposite
                         in="flood"
                         in2="blur"
