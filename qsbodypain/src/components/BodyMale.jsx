@@ -4,8 +4,8 @@ export function BodyMale({ handleAreaClick, shownAreas, svgRef, clickPoints }) {
     return (
         <svg
             ref={svgRef}
-            width="700"
-            height="700"
+            /* width="700"
+            height="700" */
             viewBox="0 0 245.75999 245.75999">
             <defs>
                 <filter
